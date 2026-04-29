@@ -19,6 +19,18 @@ public class TesteSistema {
         return Double.parseDouble(JOptionPane.showInputDialog(j));
     }
 
-    
+    public static void main(String[] args) {
+        //instanciar objetos
 
+        //String nome, String email, String fone, double renda, String cpf, String rg, String dataNascimento
+        PessoaFisica objPessoaFisica = new PessoaFisica(
+                texto("infomações da pessoa fisica\n nome: "),
+                texto("email: "),
+                texto("fone: "),
+                real("Renda: "),
+                texto("cpf"),
+                texto("rg: "),
+                texto("data de nascimento: ")
+        );
+    }
 }
