@@ -10,7 +10,7 @@ public class PessoaFisica  extends Pessoa{
     public PessoaFisica() {
     }
 
-    public PessoaFisica(String cpf, String rg, String dataNascimento, DadosBancarios dadosBancarios) {
+    public PessoaFisica(String cpf, String rg, String dataNascimento) {
         this.cpf = cpf;
         this.rg = rg;
         this.dataNascimento = dataNascimento;
