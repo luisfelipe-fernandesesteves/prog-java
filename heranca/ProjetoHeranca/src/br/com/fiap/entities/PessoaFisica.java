@@ -17,6 +17,13 @@ public class PessoaFisica  extends Pessoa{
         this.dadosBancarios = dadosBancarios;
     }
 
+    public PessoaFisica(String nome, String email, String fone, double renda, String cpf, String rg, String dataNascimento) {
+        super(nome, email, fone, renda);
+        this.cpf = cpf;
+        this.rg = rg;
+        this.dataNascimento = dataNascimento;
+    }
+
     public String getCpf() {
         return cpf;
     }
