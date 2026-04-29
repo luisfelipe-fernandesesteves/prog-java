@@ -1,6 +1,6 @@
 package br.com.fiap.entities;
-
-public class Pessoa {
+//abstract usado para dizer que é a super classe
+public abstract class Pessoa {
 
     protected String nome;
     protected String email;
