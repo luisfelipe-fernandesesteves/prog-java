@@ -1,6 +1,6 @@
 package br.com.fiap.entities;
-
-public class PessoaFisica {
+//extends é utilizado para falar que é uma extensão da super classe pessoa
+public class PessoaFisica  extends Pessoa{
 
     private String cpf;
     private String rg;
