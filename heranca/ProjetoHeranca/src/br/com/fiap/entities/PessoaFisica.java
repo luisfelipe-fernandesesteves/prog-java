@@ -18,6 +18,7 @@ public class PessoaFisica  extends Pessoa{
     }
 
     public PessoaFisica(String nome, String email, String fone, double renda, String cpf, String rg, String dataNascimento) {
+        //atributos da classe super em to string
         super(nome, email, fone, renda);
         this.cpf = cpf;
         this.rg = rg;
