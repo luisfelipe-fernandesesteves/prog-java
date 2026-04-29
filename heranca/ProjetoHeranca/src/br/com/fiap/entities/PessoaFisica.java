@@ -7,4 +7,51 @@ public class PessoaFisica {
     private String dataNascimento;
     private DadosBancarios dadosBancarios; //atributo de referencia
 
+    public PessoaFisica() {
+    }
+
+    public PessoaFisica(String cpf, String rg, String dataNascimento, DadosBancarios dadosBancarios) {
+        this.cpf = cpf;
+        this.rg = rg;
+        this.dataNascimento = dataNascimento;
+        this.dadosBancarios = dadosBancarios;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getRg() {
+        return rg;
+    }
+
+    public void setRg(String rg) {
+        this.rg = rg;
+    }
+
+    public String getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(String dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+
+    public DadosBancarios getDadosBancarios() {
+        return dadosBancarios;
+    }
+
+
+    @Override
+    public String toString() {
+        return "--Pessoa Física--" +
+                "\nCPF = " + cpf +
+                "\nRG = " + rg +
+                "\nData de Nascimento = " + dataNascimento +
+                "\nDados Bancários = " + dadosBancarios;
+    }
 }
